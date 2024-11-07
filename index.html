@@ -6,21 +6,25 @@
     <title>Mi Portafolio</title>
     <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Archivo CSS personalizado -->
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-gray-100 text-gray-800">
-    <!-- Contenido de tu página aquí -->
-    <header class="text-center py-5 bg-blue-600 text-white">
-        <h1 class="text-3xl font-bold">Bienvenido a Mi Portafolio</h1>
-    </header>
-    
-    <main class="container mx-auto p-5">
-        <section id="about" class="my-10">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4 fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between">
+            <a href="#about" class="text-lg font-semibold hover:text-gray-200">Sobre Mí</a>
+            <a href="#projects" class="text-lg font-semibold hover:text-gray-200">Proyectos</a>
+            <a href="#contact" class="text-lg font-semibold hover:text-gray-200">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto p-5 mt-16">
+        <section id="about" class="my-10 pt-16">
             <h2 class="text-2xl font-semibold">Sobre Mí</h2>
             <p class="mt-2">Soy un desarrollador apasionado por crear sitios web modernos y funcionales.</p>
         </section>
-        <section id="projects" class="my-10">
+
+        <section id="projects" class="my-10 pt-16">
             <h2 class="text-2xl font-semibold">Proyectos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
                 <div class="bg-white shadow-md rounded p-5">
@@ -31,20 +35,18 @@
                     <h3 class="text-xl font-bold">Proyecto 2</h3>
                     <p>Descripción breve del proyecto.</p>
                 </div>
-                <!-- Añade más proyectos aquí -->
             </div>
         </section>
-        <section id="contact" class="my-10 text-center">
+
+        <section id="contact" class="my-10 pt-16 text-center">
             <h2 class="text-2xl font-semibold">Contáctame</h2>
             <p class="mt-2">Si quieres ponerte en contacto, envíame un mensaje a mi correo: ejemplo@correo.com</p>
             <a href="mailto:ejemplo@correo.com" class="mt-5 inline-block bg-blue-600 text-white px-5 py-2 rounded">
                 Enviar Correo
             </a>
         </section>
-        
-        
     </main>
-    
+
     <!-- Archivo JavaScript personalizado -->
     <script src="js/app.js"></script>
 </body>
